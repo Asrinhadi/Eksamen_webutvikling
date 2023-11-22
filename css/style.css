@@ -38,6 +38,13 @@
     color: white;
   }
 
+  .container {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+
   .fa {
     padding: 20px;
     font-size: 30px;
