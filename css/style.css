@@ -5,10 +5,11 @@ header {
   align-items: center;
 }
 
-#picture-primary {
-  font-size: x-small;
+.picture-primary {
   max-width: 333;
 }
+
+
 
 nav ul {
   display: flex;
@@ -44,6 +45,14 @@ nav li a {
   text-decoration: none;
   color: #000;
 
+}
+
+
+.custom-icon i {
+  background-color: black; 
+  color: white; 
+  padding: 4px;
+  margin: 5px; 
 }
 
 
