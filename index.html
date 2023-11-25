@@ -1,6 +1,9 @@
 <html lang="no">
 <head>
-    <!--start av metadata-->
+    <meta property="og:title" content="Nettstedets tittel">
+    <meta property="og:description" content="Beskrivelse av nettstedet">
+    <meta property="og:image" content="URL til et bilde som representerer nettstedet">
+    <meta property="og:url" content="Fullstendig URL til nettstedet">
     <meta charset="UTF-8">
     <meta name="description" content="gode og behagelige Nike sko til både hverdagen og til trening">
     <meta name="keywords" content="sko Nike trening ">
@@ -8,15 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6351096b01.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>index</title>
-</head>
-<body>
-    <!-- Resten av HTML-koden for nettstedet ditt -->
-</body>
-</html>
-
-
-
+    <title>Index</title>
 </head>
 <body>
     <header>
@@ -35,18 +30,18 @@
             <h1>Compiling headline</h1>
             <p>Nulla inceptos est himenaeos ullamcorper sociosqu nunc ad dui potenti nostraut tellus integer dictum luctus vulputate ultricies velit pulvinarfusce blandit maecenas sollicitudin 
             bibendum tristique feugiat neque tempor. Sociosqu pharetra duis nec dis iaculis volutpat Nulla inceptos est himenaeos ullamcorper sociosqu nunc ad dui potenti nostra, ut tellus integer dictum luctus vulputate ultricies velit pulvinar fusce</p>
-            <a href="#services" class="btn-primary">Read more about our services</a>
+            <a href="#services" id="btn" class="btn-primary">Read more about our services</a>
         </section>
         <section>
             <h2>Enganging subheading: What can you help your visitors with</h2>
             <p>Nulla inceptos est himenaeos ullamcorper sociosqu nunc ad dui potenti nostra, ut tellus integer dictum luctus vulputate ultricies velit pulvinar, fusce blandit maecenas sollicitudin bibendum tristique feugiat neque tempor. Sociosqu pharetra duis nec dis iaculis volutpat Nulla inceptos est himenaeos ullamcorper sociosqu nunc ad dui potenti nostra, ut tellus integer dictum luctus vulputate ultricies velit pulvinar fusce blandit maecenas sollicitudin bibendum tristique feugiat neque tempor. Sociosqu pharetra duis nec dis iaculis volutpat</p>
         </section>
         <section>
-            <article>
-                <img class="picture" src="img/400x400.png" alt="#">
+            <article class="background-color">
+                <img src="img/400x400.png" alt="#">
                 <h2>About our company</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipiscing elit malesuada torquent, augue hac sem lectus sagittis neque suscipit convallis ante, auctor maecenas mi class netus nulla tempus curae. Mi vel purus risus odio ante eu laoreet nulla varius, facilisis ut tempus pharetra ligula sem volutpat gravida </p>
-                <a href="about.html" class="btn-secondary">Read more about us</a>
+                <a href="about.html"  class="btn-secondary">Read more about us</a>
             </article>
         </section>
         <section id="services">
@@ -74,7 +69,7 @@
             <div>
                 <form method="post">
                     <input type="text" id="signinn" placeholder="" required>
-                    <a class="btn-primary"><label for="signinn"><b>Sign me up</b></label></a>
+                    <a class="btn-primary" class="btn"><label for="signinn"><b>Sign me up</b></label></a>
                 </form>
             </div>
         </article>
