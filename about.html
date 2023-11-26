@@ -26,11 +26,10 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="gridcontainer">
             <article>
-                <img class="picture" src="img/" alt="#">
                 <p>Company name</p>
-                <h2>About our company</h2>
+                <h1>About our company</h1>
                 <p>Nulla inceptos est himenaeos ullamcorper sociosqu nunc ad dui
                 potenti nostra, ut tellus integer dictum luctus vulputate ultricies
                 velit pulvinar, fusce blandit maecenas sollicitudin bibendum tristique
@@ -77,32 +76,33 @@
             
         </section> 
         <!--kode hentet fra W3School -->
-        <section id="message">
+        <section class="contact">
             <h2>Contact us</h2>
             <p>Send us a message</p>
-            <div id="container">
+            <article id="message">
                 <form method="post">
                     <label for="name"><b>Name</b></label>
                     <input type="text" id="name" placeholder="Ola Nordmann.." required>
                     <label for="subject"><b>Subject</b></label>
                     <input type="text" id="subject" placeholder="Branding.." required>
                     <p><label for="Message">Message</label></p>
-                    <textarea id="Message" name="Message" rows="4" cols="50"></textarea><br>                 
+                    <textarea id="Message" name="Message" rows="4" cols="50"></textarea>
+                    <br>
                     <button class="button" type="submit">Send message</button>
-                  
-                </form>
-            </div>
-        </section>    
-       <section>
-            <p>Contact information</p>
-            <p>Nulla inceptos est himenaeos ullamcorper sociosqu nunc ad dui potenti nostra
+                  </form>
+            </article>
+            <article>
+                <h2>Contact information</h2>
+                <p>Nulla inceptos est himenaeos ullamcorper sociosqu nunc ad dui potenti nostra
                tellus integer dictum luctus vulputate ultricies velit pulvinar, 
                fusce blandit maecenas sollicitudin bibendum tristique feugiat neque tempor.
-               Sociosqu pharetra duis nec dis iaculis volutpat
-            </p>
+               Sociosqu pharetra duis nec dis iaculis volutpat</p>
+            </article>
         </section>
         <section>
+            <aside class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.1882765496962!2d11.350223011666714!3d59.129250226914905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1700607162187!5m2!1sno!2sno" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </aside>
         </section>
     </main>
 <footer>

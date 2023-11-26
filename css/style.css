@@ -26,6 +26,41 @@ nav li a {
     text-decoration: none;
     color: #000;
 }
+/*Css til about.html*/
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.gridcontainer p {
+    text-align: right;
+}
+.gridcontainer h1 {
+    text-align: right;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;  
+    gap: 30px;  
+    background-color: antiquewhite;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contact p {
+    max-width: 500px;
+}
+
+#message {
+    order: -1;
+}
+
+.map {
+    max-width: 100%;
+}
 
 
 #section-main-1 {
@@ -133,16 +168,13 @@ a {
 }
 
   
-.custom-icon i {
-    align-items: center;
+footer i {
     background-color: black; 
     color: white; 
     padding: 4px;
     margin: 5px; 
-}
-.custom-icon {
-    justify-content: flex-end;
-}
+    align-items: end;
+}    
 
 #services {
     display: grid;
@@ -173,6 +205,27 @@ a {
     justify-content: center;
     gap: 10px;
 }
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;  
+    gap: 30px;  
+    background-color: #e6bd43;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.container h2 {
+  order: -1;
+}
+.container p {
+    max-width: 500px;
+}
+.container img {
+    order: -1;
+}
+
 #article-logo h2 {
     text-align: center;
     width: 100%;
@@ -181,6 +234,8 @@ a {
 footer {
    background-color: #000;
    color: #fff;
+   padding: 5px;
+ 
 }
   
 @media only screen and (min-width: 768px) {
@@ -197,7 +252,9 @@ footer {
     #section-main-3 {
         grid-template-columns: 1fr 1fr;
     }
-    
+    .gridcontainer {
+        grid-template-columns: 1fr;
+    }
 }
 
 
