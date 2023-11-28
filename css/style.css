@@ -29,26 +29,15 @@ nav li a {
 /*Css til about.html*/
 
 .gridcontainer {
-    display: flex;
-    justify-content: flex-end;
-    margin: 0%;
-    padding: 0%;
-    border-style: solid;
-    border-width: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
 }
-/* fra youtube */
-/*.gridcontainer {
-    --padding: 1rem;
-    position: relative;
-    padding: var(--padding);
+.gridcontainer article {
+    grid-column: 2;
+
+
 }
 
-.gridcontainer-name {
-    position: absolute;
-    top: var(--padding);
-    left: var(--padding);
-}
-*/
 #services {
     display: grid;
     grid-template-columns: 1fr;
@@ -94,18 +83,38 @@ nav li a {
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 
+.messsage form {
+    display: flex !important;
+    flex-direction: column!important;
+}
+form {
+    max-width: 400px;
+    margin: 20px auto;
+}
+h2 {
+    text-align: center;
+}
+label, input, textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    width: 200%;
+}
 .contact {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;  
+    display: grid;
+    grid-template-columns: 1fr;   
     gap: 30px;  
     padding-top: 50px;
     padding-bottom: 50px;
-     background-color: #e7dfdf;
+    margin: 0%;
+    background-color: #e7dfdf;
 }
 
 .contact p {
@@ -136,12 +145,17 @@ nav li a {
 }
 
 .btn-primary {
-   
     background-color: #e6bd43;
+    border: none;
     color: #000;
-    padding: 3px 6px 3px 6px;
-}
-  
+    padding: 5px 10px;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    text-align: center;
+    font-size: 15px;
+    margin: 2px 1px;
+    transition: 0.3s;
+}  
 .btn-secondary {
     
     color: #000;
@@ -153,19 +167,8 @@ nav li a {
     background-color: #252525;
     color: #e6bd43;
 }
-
-#btn {
-    background-color: #e6bd43;
-    border: none;
-    color: #000;
-    padding: 5px 20px;
-    text-align: center;
-    font-size: 15px;
-    margin: 2px 1px;
-    transition: 0.3s;
-}
   
-#btn:hover {
+.btn-primary:hover {
     background-color: #252525;
     color: #e6bd43;
 }
@@ -174,8 +177,8 @@ a {
     text-decoration: none; 
 }
 
-.solid-icons {
-    font-size: 50px;
+#service i {
+    font-size: 100px;
 }
 
 .picturs img {
@@ -203,6 +206,10 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
+.custom-icon {
+    
+}
+
 
 /* css på index html */
 
@@ -265,6 +272,7 @@ footer {
 }
 .article-company img {
     order: -1;
+    width: 100%;
 }
 
 
@@ -339,7 +347,7 @@ footer {
  
 }
   
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 900px) {
     header {
       flex-direction: row;
       justify-content: space-between;
@@ -354,8 +362,19 @@ footer {
         grid-template-columns: 1fr 1fr;
     }
     .gridcontainer {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
+    .contact {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        align-items: center; 
+        
+    }
+    .article-company img {
+        max-width: 400px;
+
+    }  
 }
 
 
