@@ -7,7 +7,7 @@
 }
   
 .picture-primary {
-    max-width: 333;
+    max-width: 3%;
 }
 
 nav ul {
@@ -194,9 +194,9 @@ a {
 footer i {
     background-color: black; 
     color: white; 
-    padding: 4px;
-    margin: 5px; 
-    align-items: end;
+    padding: 5px;
+    margin: 7px; 
+    align-items: center;
 }    
 
 footer {
@@ -204,9 +204,15 @@ footer {
     justify-content: space-between;
     align-items: center;
 }
-.custom-icon {
 
-    
+footer p {
+    text-size-adjust: 1px;
+}
+
+
+body {
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 /* css på index html */
@@ -262,20 +268,42 @@ footer {
     padding-bottom: 50px;
 }
 
+#section-main-2 {
+    text-align: center;
+}
+
+#solid {
+    border-style: solid;
+}
+
+.article-company {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;  
+    gap: 30px;  
+    background-color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .article-company p {
     max-width: 500px;
 }
 .article-company img {
     order: -1;
-    width: 100%;
+    width: 50%;
 }
 
-
 .post {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     background-color: #aba6a6;
     text-align: center;
-    padding-top: 3%;
-    padding-bottom: 3%;
+}
+.post  {
+
 }
 
 
@@ -283,7 +311,7 @@ footer {
 /* css på portfolio.html */
 .heading {
     background-color: #b3ab8e;
-    background-image: url("../img/portfolio-medium.jpg");
+    background-image: url("../img/background.jpg");
     background-repeat: no-repeat;
     color: #000;
     padding-top: 100px;
@@ -295,6 +323,13 @@ footer {
 
 .heading h1 {
     text-align: center;
+}
+
+#section-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 10%;
 }
 
 .container {
@@ -313,9 +348,8 @@ footer {
 .container h2 {
     width: 100%;
     text-align: left;
-    text-decoration: underline;
-    text-decoration-color: #e6bd43;
-  
+    border-bottom: solid;
+    border-bottom-color: #e6bd43;
 }
 
 .container article {
@@ -342,7 +376,7 @@ footer {
  
 }
   
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 990px) {
     header {
       flex-direction: row;
       justify-content: space-between;
@@ -369,7 +403,10 @@ footer {
     .article-company img {
         max-width: 400px;
 
-    }  
+    } 
+    .article-l {
+        flex-direction: row;
+    } 
 }
 
 
