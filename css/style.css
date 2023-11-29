@@ -89,6 +89,7 @@ nav li a {
     grid-column: 1 / -1;
 }
 .message {
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -238,11 +239,6 @@ footer p {
     text-size-adjust: 1px;
 }
 
-
-body {
-    margin-left: 5%;
-    margin-right: 5%;
-}
 
 /* css på index html */
 
